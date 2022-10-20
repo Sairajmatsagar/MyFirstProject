@@ -67,8 +67,8 @@ public class Base_Class implements FrameworkConstants {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void logoutOfApplication() {
-		homePage.logout();
+	public void logoutOfApplication() throws InterruptedException {
+      homePage.logout();
 	}
 
 	@AfterClass(alwaysRun = true)
